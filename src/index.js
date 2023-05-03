@@ -1,6 +1,5 @@
 import './styles.css';
 
-
 const tasks = [
   {
     description: 'Buy groceries',

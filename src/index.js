@@ -1,20 +1,21 @@
 import './styles.css';
 
+
 const tasks = [
   {
     description: 'Buy groceries',
     completed: false,
-    index: 0,
+    index: 1,
   },
   {
     description: 'clean the house',
     completed: false,
-    index: 1,
+    index: 2,
   },
   {
     description: 'working on To Do list',
     completed: false,
-    index: 2,
+    index: 3,
   },
 ];
 

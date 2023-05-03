@@ -1,5 +1,5 @@
 import './styles.css';
-import refresh from './refresh.png';
+
 const tasks = [
   {
     description: 'Buy groceries',

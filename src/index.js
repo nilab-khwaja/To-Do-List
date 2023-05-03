@@ -1,19 +1,21 @@
+import './styles.css';
+import refresh from './refresh.png';
 const tasks = [
-    {
-        description: "Buy groceries",
-        completed: false,
-        index:0
-    },
-    {
-        description: "clean the house",
-        completed: false,
-        index:1
-    },
-    {
-        description: "working on To Do list",
-        completed: false,
-        index:2
-    }
+  {
+    description: 'Buy groceries',
+    completed: false,
+    index: 0,
+  },
+  {
+    description: 'clean the house',
+    completed: false,
+    index: 1,
+  },
+  {
+    description: 'working on To Do list',
+    completed: false,
+    index: 2,
+  },
 ];
 
 const listContainer = document.getElementById('list-container');
@@ -29,8 +31,8 @@ const ShowList = () => {
     checkIcon.type = 'checkbox';
     checkIcon.checked = tasks[i].completed;
     span.innerHTML = tasks[i].description;
-    dotsIcon.src = "dots.png"
-    dotsIcon.style.width = "20px";
+    dotsIcon.src = 'dots.png';
+    dotsIcon.style.width = '20px';
     listItem.appendChild(checkIcon);
     listItem.appendChild(span);
     listItem.appendChild(dotsIcon);

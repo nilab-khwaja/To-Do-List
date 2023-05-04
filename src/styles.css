@@ -32,7 +32,7 @@ h1 {
 
 .container div {
   margin: 0;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,17 +43,18 @@ h1 {
 
 #refresh-icon,
 #enter-icon {
-  width: 1rem;
-  aspect-ratio: 1/1;
+  width: 2rem;
 }
 
-.add-field {
+#add-field {
   height: 3rem;
   border: solid 1px gainsboro;
   border-right: 0;
   border-left: 0;
   outline: none;
   flex-grow: 1;
+  font-style: italic;
+  font-size: large;
 }
 
 #list-container {
@@ -88,7 +89,7 @@ input:checked ~ span {
   flex-grow: 1;
 }
 
-.clear-btn {
+#clean-btn {
   height: 3rem;
   padding: 1rem;
   margin: 0;
@@ -96,6 +97,6 @@ input:checked ~ span {
   color: gray;
 }
 
-.clear-btn:hover {
+#clean-btn:hover {
   background-color: gainsboro;
 }

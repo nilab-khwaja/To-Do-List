@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    filename: 'build/[name].js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -15,6 +15,9 @@ module.exports = {
 
   devServer: {
     static: './dist',
+    watchFiles: ['./src/*'],
+    open: true,
+    hot: true,
   },
 
   plugins: [

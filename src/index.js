@@ -1,5 +1,7 @@
 import './styles.css';
-import { ShowElement, HideElement } from './javascript.js';
+import { ShowElement, HideElement } from './visiable.js';
+import CheckIfCompleted from './completion.js';
+
 
 let tasks = [];
 
@@ -42,7 +44,7 @@ const OkFun = (varX, val) => {
 };
 
 const CheckFun = (varI, check) => {
-  tasks[varI].completed = check;
+  tasks[varI].completed = CheckIfCompleted(check);
 };
 
 ShowList = () => {
@@ -52,6 +54,13 @@ ShowList = () => {
     const checkIcon = document.createElement('input');
     const span = document.createElement('span');
     const editField = document.createElement('input');
+    
+    editField.style.height = '3rem';
+    editField.style.outline = 'none';
+    editField.style.borderColor = 'gainsboro';
+    editField.style.padding = '5px';
+
+
 
     const x = tasks[i].index;
     checkIcon.type = 'checkbox';
@@ -61,23 +70,23 @@ ShowList = () => {
 
     const delIcon = document.createElement('i');
     delIcon.classList.add('bi', 'bi-trash');
-    delIcon.style.fontSize = '2rem';
+    delIcon.style.fontSize = '20px';
 
     const editIcon = document.createElement('i');
     editIcon.classList.add('bi', 'bi-pencil');
-    editIcon.style.fontSize = '2rem';
+    editIcon.style.fontSize = '30';
 
     const okIcon = document.createElement('i');
     okIcon.classList.add('bi', 'bi-check');
-    okIcon.style.fontSize = '2rem';
+    okIcon.style.fontSize = '30px';
 
     const xIcon = document.createElement('i');
     xIcon.classList.add('bi', 'bi-x');
-    xIcon.style.fontSize = '2rem';
+    xIcon.style.fontSize = '30px';
 
     const dotsIcon = document.createElement('i');
     dotsIcon.classList.add('bi', 'bi-three-dots-vertical');
-    dotsIcon.style.fontSize = '1rem';
+    dotsIcon.style.fontSize = '30px';
 
     listItem.appendChild(checkIcon);
     listItem.appendChild(span);

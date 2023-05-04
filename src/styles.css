@@ -32,13 +32,13 @@ h1 {
 
 .container div {
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
   border: solid 1px gainsboro;
-  height: 3rem;
+  height: 4rem;
 }
 
 #refresh-icon,
@@ -54,7 +54,6 @@ h1 {
   outline: none;
   flex-grow: 1;
   font-style: italic;
-  font-size: large;
 }
 
 #list-container {

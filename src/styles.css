@@ -47,13 +47,16 @@ h1 {
   aspect-ratio: 1/1;
 }
 
-.add-field {
+#add-field {
   height: 3rem;
   border: solid 1px gainsboro;
   border-right: 0;
   border-left: 0;
   outline: none;
   flex-grow: 1;
+  border: none;
+  font-style: italic;
+  font-size: large;
 }
 
 #list-container {
@@ -88,7 +91,7 @@ input:checked ~ span {
   flex-grow: 1;
 }
 
-.clean-btn {
+#clean-btn {
   height: 3rem;
   padding: 1rem;
   margin: 0;
@@ -96,6 +99,6 @@ input:checked ~ span {
   color: gray;
 }
 
-.clean-btn:hover {
+#clean-btn:hover {
   background-color: gainsboro;
 }

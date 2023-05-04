@@ -2,7 +2,6 @@ import './styles.css';
 import { ShowElement, HideElement } from './visiable.js';
 import CheckIfCompleted from './completion.js';
 
-
 let tasks = [];
 
 const enterIcon = document.getElementById('enter-icon');
@@ -54,13 +53,11 @@ ShowList = () => {
     const checkIcon = document.createElement('input');
     const span = document.createElement('span');
     const editField = document.createElement('input');
-    
+
     editField.style.height = '3rem';
     editField.style.outline = 'none';
     editField.style.borderColor = 'gainsboro';
     editField.style.padding = '5px';
-
-
 
     const x = tasks[i].index;
     checkIcon.type = 'checkbox';

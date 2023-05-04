@@ -1,7 +1,6 @@
- import './styles.css';
- import { ShowElement, HideElement } from './javascript.js';
+import './styles.css';
+import { ShowElement, HideElement } from './javascript.js';
 
- 
 let tasks = [];
 
 const enterIcon = document.getElementById('enter-icon');
@@ -53,30 +52,29 @@ ShowList = () => {
     const checkIcon = document.createElement('input');
     const span = document.createElement('span');
     const editField = document.createElement('input');
-   
+
     const x = tasks[i].index;
     checkIcon.type = 'checkbox';
     checkIcon.checked = tasks[i].completed;
     span.innerHTML = tasks[i].description;
     editField.style.flexGrow = 1;
 
-
     const delIcon = document.createElement('i');
     delIcon.classList.add('bi', 'bi-trash');
-    delIcon.style.fontSize = '1rem';
-    
+    delIcon.style.fontSize = '2rem';
+
     const editIcon = document.createElement('i');
     editIcon.classList.add('bi', 'bi-pencil');
-    editIcon.style.fontSize = '1rem';
-    
+    editIcon.style.fontSize = '2rem';
+
     const okIcon = document.createElement('i');
     okIcon.classList.add('bi', 'bi-check');
-    okIcon.style.fontSize = '1rem';
-    
+    okIcon.style.fontSize = '2rem';
+
     const xIcon = document.createElement('i');
     xIcon.classList.add('bi', 'bi-x');
-    xIcon.style.fontSize = '1rem';
-    
+    xIcon.style.fontSize = '2rem';
+
     const dotsIcon = document.createElement('i');
     dotsIcon.classList.add('bi', 'bi-three-dots-vertical');
     dotsIcon.style.fontSize = '1rem';
@@ -134,7 +132,6 @@ ShowList = () => {
 ShowList();
 
 enterIcon.addEventListener('click', () => {
-  console.log(addField);
   if (tasks.length !== 0) {
     tasks.push({
       description: addField.value,

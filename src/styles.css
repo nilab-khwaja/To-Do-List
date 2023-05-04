@@ -32,7 +32,7 @@ h1 {
 
 .container div {
   margin: 0;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,8 +43,7 @@ h1 {
 
 #refresh-icon,
 #enter-icon {
-  width: 1rem;
-  aspect-ratio: 1/1;
+  width: 2rem;
 }
 
 #add-field {
@@ -54,7 +53,6 @@ h1 {
   border-left: 0;
   outline: none;
   flex-grow: 1;
-  border: none;
   font-style: italic;
   font-size: large;
 }

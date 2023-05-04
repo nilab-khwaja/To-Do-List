@@ -1,22 +1,27 @@
 import './styles.css';
 
-const tasks = [
-  {
-    description: 'Buy groceries',
+const tasks = [];
+
+const enterIcon = document.getElementById('enter-icon');
+const addField = document.getElementById('add-field');
+
+enterIcon.addEventListener('click', () => {
+if (tasks.length !== 0) {
+  tasks.push({
+    description: addField.value,
     completed: false,
-    index: 1,
-  },
-  {
-    description: 'clean the house',
+    index: tasks[tasks.length - 1].index + 1,
+  },)
+}else{
+  tasks.push(  {
+    description: addField.value,
     completed: false,
-    index: 2,
-  },
-  {
-    description: 'working on To Do list',
-    completed: false,
-    index: 3,
-  },
-];
+    index: 0,
+  },)
+}
+ShowList();
+localStorage.setItem('to_do_list', JSON.stringify(tasks));
+})
 
 const listContainer = document.getElementById('list-container');
 const ShowList = () => {

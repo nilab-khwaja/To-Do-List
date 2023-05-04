@@ -88,7 +88,7 @@ input:checked ~ span {
   flex-grow: 1;
 }
 
-.clear-btn {
+.clean-btn {
   height: 3rem;
   padding: 1rem;
   margin: 0;
@@ -96,6 +96,6 @@ input:checked ~ span {
   color: gray;
 }
 
-.clear-btn:hover {
+.clean-btn:hover {
   background-color: gainsboro;
 }

@@ -7,20 +7,19 @@
   "scripts": {
     "start": "webpack serve --open",
     "watch": "webpack --watch",
-    "build": "webpack",
-    "deploy": "gh-pages -d dist"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nilab-khwaja/To-Do-List.git"
   },
   "keywords": [],
-  "homepage": "https://nilab-khwaja.github.io/To-Do_List",
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nilab-khwaja/To-Do-List/issues"
   },
+  "homepage": "https://github.com/nilab-khwaja/To-Do-List#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
@@ -38,8 +37,5 @@
     "webpack": "^5.81.0",
     "webpack-cli": "^5.0.2",
     "webpack-dev-server": "^4.13.3"
-  },
-  "dependencies": {
-    "gh-pages": "^5.0.0"
   }
 }

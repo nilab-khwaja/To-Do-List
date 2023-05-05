@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/nilab-khwaja/To-Do-List/issues"
   },
-  "homepage": "https://nilab-khwaja.github.io/To-Do-List#readme",
+  "homepage": "https://nilab-khwaja.github.io/To-Do-List",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",

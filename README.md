@@ -64,7 +64,7 @@ To-Do list is application that build used Javascript,HTML and css. This project 
 
 > Here you can see a live demo of my portfolio
 
-- [Live Demo Link](https://github.com/nilab-khwaja/To-Do-List/)
+- [Live Demo Link](https://nilab-khwaja.github.io/To-Do-List/)
 
 
 
